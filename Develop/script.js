@@ -1,6 +1,5 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var charSet;
 var lowerChoiceArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperChoiceArr = lowerChoiceArr.map(function (x) { return x.toUpperCase(); });
 var numChoiceArr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
@@ -19,6 +18,7 @@ function writePassword() {
       alert("Passwords must have no more than 128 characters.");
       return;
     }
+
     //prompts for character choice
     var lowerCase = confirm("Would you like lowercase letters?");
     var upperCase = confirm("Would you like uppercase letters?");
@@ -44,7 +44,7 @@ function writePassword() {
       return;
     }
 
-    //random nuber generation & loops for number of characters
+    //random number generation & loops for number of characters
     var newPass = "";
 
     for (var i = 0; i < charNum; i++) {
