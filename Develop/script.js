@@ -50,7 +50,6 @@ function writePassword() {
     for (var i = 0; i < charNum; i++) {
       var randomNumber = Math.floor(Math.random() * reqCharSet.length);
       var randomItem = reqCharSet[randomNumber];
-      console.log(randomItem);
       newPass = newPass + randomItem;
     } return newPass;
 
